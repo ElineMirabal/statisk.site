@@ -1,0 +1,45 @@
+/* sæt dine billeders width til 100% */
+img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+/* Lav .container med en max-width (fx 1200px) og centrer den */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Lav .product-gallery til et grid med:
+   - grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); (så cards bryder til næste linje)
+   - 4 rækker: h3, img, price, button
+   - Gap mellem cards*/
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Gør hver .product til et grid med subgrid på rækker */
+.product {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  background-color: beige;
+  padding: 30px;
+}
+
+/* Sørg for at hvert produktkort spænder over 4 rækker */
+
+/* Tilføj border, padding og styling til cards */
+
+/********************INDEX SIDE********************/
+
+.kategorier {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}

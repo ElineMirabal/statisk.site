@@ -2,32 +2,67 @@
 <html lang="en">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Forside</title>
 </head>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <h1> STATISK</h1>
+        </a>
+    </div>
+
+    <nav>
+        <div class="menu">
+            <a href="productlist.html">Products</a>
+        </div>
+
+        <button class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+    </nav>
+</header>
+
+
 
 <body>
 
     <h1>Categories</h1>
 
     <div class="kategorier">
-        <div>
-            <a href="productlist.html">Accessories</a>
-            <a href="productlist.html">Apparel</a>
-            <a href="productlist.html">Footwear</a>
-        </div>
 
-        <div>
+        <article class="card-kategorier">
+            <a href="productlist.html">Accessories</a>
+        </article>
+        <article class="card-kategorier">
+            <a href="productlist.html">Apparel</a>
+        </article>
+
+        <article class="card-kategorier">
+            <a href="productlist.html">Footwear</a>
+        </article>
+
+        <article class="card-kategorier">
             <a href="productlist.html">Free Items</a>
+        </article>
+
+        <article class="card-kategorier">
             <a href="productlist.html">Personal Care</a>
+        </article>
+
+        <article class="card-kategorier">
             <a href="productlist.html">Sporting Goods</a>
-        </div>
+        </article>
     </div>
 
 
 
+    <script src="burger.js"></script>
 </body>
 
 </html>

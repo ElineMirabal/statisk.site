@@ -2,54 +2,77 @@
 <html lang="en">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Product list</title>
 </head>
 
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <h1> STATISK</h1>
+        </a>
+    </div>
+
+    <nav>
+        <div class="menu">
+            <a href="productlist.html">Products</a>
+        </div>
+
+        <button class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+    </nav>
+</header>
+
 <body>
+
+    <h1> Produkter</h1>
     <div class="container">
         <div class="product-gallery">
             <article class="product">
                 <h3>Produkt 1</h3>
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Produkt 1" />
                 <p class="price">199 kr</p>
-                <button>Køb nu</button>
+                <a href="product.html" class="button">Køb nu</a>
             </article>
             <article class="product">
                 <h3>Produkt 2 med meget langt produktnavn</h3>
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Produkt 2" />
                 <p class="price">299 kr</p>
-                <button>Køb nu</button>
+                <a href="product.html" class="button">Køb nu</a>
             </article>
             <article class="product">
                 <h3>Produkt 3</h3>
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp" alt="Produkt 3" />
                 <p class="price">149 kr</p>
-                <button>Køb nu</button>
+                <a href="product.html" class="button">Køb nu</a>
             </article>
             <article class="product">
                 <h3>Produkt 4</h3>
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" alt="Produkt 4" />
                 <p class="price">399 kr</p>
-                <button>Køb nu</button>
+                <a href="product.html" class="button">Køb nu</a>
             </article>
             <article class="product">
                 <h3>Produkt 5</h3>
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp" alt="Produkt 5" />
                 <p class="price">249 kr</p>
-                <button>Køb nu</button>
+                <a href="product.html" class="button">Køb nu</a>
             </article>
             <article class="product">
                 <h3>Produkt 6</h3>
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp" alt="Produkt 6" />
                 <p class="price">179 kr</p>
-                <button>Køb nu</button>
+                <a href="product.html" class="button">Køb nu</a>
             </article>
         </div>
     </div>
-
+    <script src="burger.js"></script>
 </body>
 
 </html>

@@ -9,42 +9,42 @@
     <title>Product</title>
 </head>
 
-<header>
-    <div class="logo">
-        <a href="index.html">
-            <h1> STATISK</h1>
-        </a>
-    </div>
-
-    <nav>
-        <div class="menu">
-            <a href="productlist.html">Products</a>
-        </div>
-
-        <button class="burger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
-    </nav>
-</header>
-
 <body>
-
-    <article class="productcard">
-        <div>
-            <h3>Produkt 1</h3>
-            <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Produkt 1" />
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1> STATISK</h1>
+            </a>
         </div>
 
-        <div>
-            <p class="price">199 kr</p>
-            <button>Køb nu</button>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </div>
-    </article>
+        <nav>
+            <div class="menu">
+                <a href="productlist.html">Products</a>
+            </div>
+        </nav>
+    </header>
 
 
+    <main class="product-page">
 
-    <script src="burger.js"></script>
+        <article class="productcard">
+
+            <h3 class="product-title">Sports-Tee</h3>
+            <div id="productContainer">
+                <section class="product-info">
+                    <p class="product-brand"> Brand:SunnyWear</p>
+                    <p class="price"> Price: 199 kr</p>
+                    <p class="product-old-price"> Old price: 299 kr</p>
+                    <p class="product-status"> Lagerstatus: In Stock</p>
+                </section>
+            </div>
+            <button type="button" class="add-to-basket">Add to basket</button>
+        </article>
+
+    </main>
+
+    <script src="productdetails.js"></script>
+
 </body>
+
+</html>

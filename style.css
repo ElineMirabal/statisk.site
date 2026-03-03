@@ -61,7 +61,7 @@ button {
 .price {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 /*******************MENU*****************/
@@ -100,7 +100,7 @@ header {
 /* sæt dine billeders width til 100% */
 img {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 /* Lav .container med en max-width (fx 1200px) og centrer den */
@@ -125,10 +125,14 @@ img {
 .product {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 4;
+  grid-row: span 6;
   background-color: #5293d4;
   padding: 30px;
   border-radius: 20px;
+}
+
+.product p {
+  line-height: 0.5px;
 }
 
 /* Sørg for at hvert produktkort spænder over 4 rækker */
@@ -203,18 +207,17 @@ img {
   }
 }
 
+/***************************PRODUCT LIST*******************************/
+
+.Billede 
+  
+
 /****************************RESPONSIVT**************************/
 
 .kategorier {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-}
-
-@media (min-width: 840px) {
-  .kategorier {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .product-gallery {
@@ -225,6 +228,10 @@ img {
 }
 
 @media (min-width: 840px) {
+  .kategorier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .product-gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }

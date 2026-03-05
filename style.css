@@ -27,14 +27,22 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 30px;
+  text-align: center;
+}
+
 h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .logo a {
+  display: block;
   text-decoration: none;
   color: #5293d4;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  line-height: 0.1rem;
 }
 
 .button {
@@ -47,6 +55,10 @@ h3 {
   text-align: center;
 }
 
+.button:hover {
+  background-color: #ffff;
+}
+
 button {
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -56,6 +68,22 @@ button {
   margin-top: 20px;
   border-radius: 30px;
   border: none;
+}
+
+#sortByPriceBtn {
+  padding: 10px;
+  display: block;
+  background-color: #ffff;
+  font-size: 1rem;
+  margin-right: 50px;
+}
+
+#sortByPriceBtn:hover {
+  background-color: #5293d4;
+}
+
+.add-to-basket:hover {
+  background-color: #5293d4;
 }
 
 .price {
@@ -94,6 +122,11 @@ header {
   transition: color 0.3s;
   text-align: center;
   border-radius: 30px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.menu a:hover {
   background-color: #5293d4;
 }
 
@@ -106,7 +139,7 @@ img {
 /* Lav .container med en max-width (fx 1200px) og centrer den */
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -175,6 +208,9 @@ img {
   gap: 20px;
   padding: 30px;
   background-color: #ffff;
+  margin: 70px;
+  max-width: 800px;
+  align-items: center;
 }
 
 .productcard img {
@@ -191,26 +227,34 @@ img {
   padding: 20px;
 }
 
+.product-brand {
+  font-weight: 700;
+}
+
 @media (min-width: 840px) {
   .productcard {
     flex-direction: row;
-    align-items: flex-start;
-  }
-  .productcard > div:first-child {
-    order: 2;
-    flex: 1;
+    align-items: flex-end;
   }
 
   .productcard > div:last-child {
     order: 1;
+    flex: 2;
+  }
+
+  .productcard > div:first-child {
+    order: 2;
     flex: 1;
   }
 }
 
 /***************************PRODUCT LIST*******************************/
 
-.Billede 
-  
+.category {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffff;
+}
 
 /****************************RESPONSIVT**************************/
 
